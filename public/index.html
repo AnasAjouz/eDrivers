@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="./styles.css" rel="stylesheet" />
+
+    <title>eDrivers</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <div class="logo-wrapper">
+              <img class="logo" src="assets/logo_resized.png" alt="logo" />
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  onclick="changeLinkColor(this)"
+                  >Parteneri</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#ceOferim"
+                  onclick="changeLinkColor(this)"
+                  >Ce oferim</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#alaturate"
+                  onclick="changeLinkColor(this)"
+                  >Alaturate echipei</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container-fluid p-0">
+            <img
+              src="./assets/eDrivers_banner-mobile.png"
+              class="w-100 d-md-none"
+              alt="eDrivers banner"
+            />
+            <img
+              src="./assets/eDrivers_banner.png"
+              class="w-100 d-none d-md-block"
+              alt="eDrivers banner"
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container-fluid p-0">
+            <img
+              src="./assets/glovo_banner-mobile.png"
+              class="w-100 d-md-none"
+              alt="glovo banner"
+            />
+            <img
+              src="./assets/glovo_banner.png"
+              class="w-100 d-none d-md-block"
+              alt="glovo banner"
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container-fluid p-0">
+            <img
+              src="./assets/food-panda_banner-mobile.png"
+              class="w-100 d-md-none"
+              alt="eDrivers banner"
+            />
+            <img
+              src="./assets/food-panda_banner.png"
+              class="w-100 d-none d-md-block"
+              alt="eDrivers banner"
+            />
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container-fluid p-0">
+            <img
+              src="./assets/tazz_banner-mobile.png"
+              class="w-100 d-md-none"
+              alt="eDrivers banner"
+            />
+            <img
+              src="./assets/tazz_banner.png"
+              class="w-100 d-none d-md-block"
+              alt="eDrivers banner"
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container pt-4" id="ceOferim">
+      <div class="row">
+        <div class="col">
+          <h1 class="col text-center my-5">Ce oferim</h1>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-md-12 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/service_01.svg"
+              class="card-img-top"
+              alt="make money"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title text-center">Flexibilitate</h5>
+              <p class="card-text">
+                Câștigați bani pe propriul program cu scuterul, bicicleta sau
+                mașina.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/service_02.svg"
+              class="card-img-top"
+              alt="make money"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title text-center">Suport pe traseu</h5>
+              <p class="card-text">
+                Când sunteți pe drum, vă suntem alături - pentru ajutor, sfaturi
+                și asistență, trimiteți un mesaj sau sunați-ne.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12 col-lg-4 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/service_03.svg"
+              class="card-img-top"
+              alt="make money"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title text-center">Calitate</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container pt-4 pb-4" id="alaturate">
+      <div class="row">
+        <div class="col">
+          <h1 class="col text-center my-5">Alaturate echipei</h1>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12 col-lg-6">
+          <img src="./assets/contact.svg" class="img-fluid" alt="make money" />
+        </div>
+
+        <div class="col-md-12 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="inputName" class="form-label">Nume(complet)</label>
+              <input type="name" class="form-control" id="inputName" />
+            </div>
+
+            <div class="mb-3">
+              <label for="InputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="InputEmail1" />
+            </div>
+
+            <div class="mb-3">
+              <label for="InputPhone" class="form-label">Telefon</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="InputPhone"
+                pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="city" class="form-label">Alege orasul:</label>
+              <select
+                class="js-select-city form-select"
+                name="city"
+                id="city"
+                onchange="handleChange(this.value)"
+              >
+                <option value="Bucuresti" selected>Bucuresti</option>
+                <option value="Constanta">Constanta</option>
+                <option value="Iasi">Iasi</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="partners" class="form-label">Alege partenerul:</label>
+              <select
+                class="js-select-partners form-select"
+                name="partners"
+                id="partners"
+              ></select>
+            </div>
+            <button class="btn btn-primary mt-2" type="button">Aplica!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid mt-5 p-2">
+      <div class="row">
+        <div class="col">
+          <p class="text-center m-0">2021 © Copyrights eDrivers</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const cityElement = document.querySelector(".js-select-city");
+
+      function handleChange(value) {
+        const partnersElement = document.querySelector(".js-select-partners");
+        if (value === "Bucuresti") {
+          partnersElement.innerHTML = `
+            <option value="Tazz">Tazz</option>
+          `;
+        } else if (value === "Constanta") {
+          partnersElement.innerHTML = `
+            <option value="Tazz">Tazz</option>
+            <option value="Food_Panda">Food Panda</option>
+          `;
+        } else if (value === "Iasi") {
+          partnersElement.innerHTML = `
+            <option value="Glovo">Glovo</option>
+          `;
+        }
+      }
+
+      handleChange(cityElement.value);
+
+      function changeLinkColor(e) {
+        const activeLink = document.querySelector("a.active");
+        activeLink.classList.remove("active");
+
+        e.classList.add("active");
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

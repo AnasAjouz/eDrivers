@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(
+    180deg,
+    rgb(255 222 224) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  font-family: "Roboto", sans-serif;
+}
+
+.carousel {
+  margin-top: 73px;
+}
+
+.logo-wrapper {
+  width: 75px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.navbar {
+  background: rgb(255 255 255 / 70%);
+}
+
+.card-img-top {
+  min-height: 220px;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+}
+
+footer {
+  background-color: #f9020221;
+  color: #d33837;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #d33837;
+}
+
+h1 {
+  color: #d33837;
+}
+
+.btn-primary,
+.btn-primary:focus {
+  background-color: #d33837;
+  border-color: #d33837;
+}
+
+.btn-primary:hover {
+  background-color: #b13130;
+  border-color: #b13130;
+}
